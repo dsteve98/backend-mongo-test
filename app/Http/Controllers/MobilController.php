@@ -56,7 +56,7 @@ class MobilController extends Controller
 
     public function edit($id)
     {
-        $mobil = Mobil::find($id);
+        $mobil = $this->mobilService->getMobilDataById($id);
         return view('mobiledit',compact('mobil','id'));
     }
 

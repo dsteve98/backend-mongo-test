@@ -14,7 +14,7 @@
       <h2>Add Mobil Data</h2><br/>
       <div class="container">
     </div>
-      <form method="post" action="{{url('mobil/add')}}">
+      <form method="post" action="{{url('api/mobil/add')}}">
         @csrf
         <div class="row">
           <div class="col-md-4"></div>

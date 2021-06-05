@@ -14,7 +14,7 @@
       <h2>Add Motor Data</h2><br/>
       <div class="container">
     </div>
-      <form method="post" action="{{url('motor/add')}}">
+      <form method="post" action="{{url('api/motor/add')}}">
         @csrf
         <div class="row">
           <div class="col-md-4"></div>

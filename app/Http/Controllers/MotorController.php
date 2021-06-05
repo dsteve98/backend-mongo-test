@@ -56,7 +56,7 @@ class MotorController extends Controller
 
     public function edit($id)
     {
-        $motor = Motor::find($id);
+        $motor = $this->motorService->getMotorDataById($id);
         return view('motoredit',compact('motor','id'));
     }
 
